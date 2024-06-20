@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.hashers import make_password
 from .models import ProUser
-from activities.serializers import ActivitySerializer, Activity  # Assuming you have ActivitySerializer defined
+from activities.serializers import ActivitySerializer, Activity
 
 class UserSerializer(serializers.ModelSerializer):
     activities = serializers.PrimaryKeyRelatedField(
